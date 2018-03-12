@@ -1,0 +1,50 @@
+{
+    "name": "获取亚马逊商品所有评论",
+    "version": "0.9.0",
+    "manifest_version": 2,
+    "description": "chrome plugin demo",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "js": ["js/jquery-3.2.1.min.js", "js/main.js"],
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ]
+
+    }],
+    "permissions": [
+        "tabs",
+        "bookmarks",
+        "http://www.blogger.com/",
+        "http://*.google.com/",
+        "unlimitedStorage", "activeTab", "activeTab",
+        "alarms",
+        "browsingData",
+        "clipboardRead",
+        "clipboardWrite",
+        "contextMenus",
+        "cookies",
+        "geolocation",
+        "management",
+        "nativeMessaging",
+        "notifications",
+        "pageCapture",
+        "power",
+        "proxy",
+        "storage",
+        "system.cpu",
+        "system.display",
+        "system.memory",
+        "system.storage",
+        "tabs",
+        "tts",
+        "ttsEngine",
+        "unlimitedStorage",
+        "webNavigation",
+        "webRequest",
+        "webRequestBlocking"
+    ]
+
+}
